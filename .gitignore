@@ -4,5 +4,6 @@
 *~
 *.pyc
 *.log
+venv
 build
 dist
