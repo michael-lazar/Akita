@@ -5,8 +5,8 @@ from version import __version__ as version
 
 
 install_requires = [
-    'datadog',
-    'apache-log-parser'
+    'datadog >=0.20,<0.21"',
+    'apache-log-parser >=1.6,<2.0'
 ]
 
 tests_require = [
