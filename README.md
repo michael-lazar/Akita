@@ -1,6 +1,5 @@
 # Akita
-A local HTTP log monitoring tool
-
+HTTP log monitoring for good boys
 ```
                           ,     ,
                           |\---/|
