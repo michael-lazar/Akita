@@ -1,4 +1,3 @@
-import codecs
 import setuptools
 
 from version import __version__ as version
@@ -13,16 +12,10 @@ extras_require = {
 }
 
 
-def long_description():
-    with codecs.open('README.md', encoding='utf8') as f:
-        return f.read()
-
-
 setuptools.setup(
     name='akita',
     version=version,
     description='An HTTP log monitoring tool for your terminal',
-    long_description=long_description(),
     url='https://github.com/michael-lazar/Akita',
     author='Michael Lazar',
     author_email='lazar.michael22@gmail.com',
