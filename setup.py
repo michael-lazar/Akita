@@ -16,7 +16,7 @@ setuptools.setup(
     license='MIT',
     keywords='http log apache nginx monitoring terminal console metrics',
     packages=['akita'],
-    python_requires='python>=3.4',
+    python_requires='>=3.4',
     extras_require={'test': ['pytest']},  # "pip install akita[test]"
     entry_points={'console_scripts': ['akita=akita.__main__:main']},
     classifiers=[
