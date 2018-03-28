@@ -11,3 +11,20 @@
 # Akita
 
 An HTTP log monitoring tool for your terminal
+
+## Installation
+
+Akita is available on [PyPI](https://pypi.python.org/pypi/akita/) and can be installed using pip:
+
+```bash
+# Requires python 3!
+pip install akita
+```
+
+Alternatively, you can clone the repository and run the code directly:
+
+```bash
+git clone https://github.com/michael-lazar/Akita.git
+cd Akita
+python3 -m akita
+```
