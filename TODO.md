@@ -5,6 +5,8 @@
 - Make all of the statistics and refresh rates configurable.
 - Add a configuration file @ **{HOME}/.config/akita/akita.conf**.
 - Save traffic alerts in a log file or HTML document.
+- Re-write the logfile reader/parser thread in C to improve performance.
+- Consider switching to an async library instead of using threads.
 
 To extend this application to work with distributed web servers, we would need to setup a client-server architecture.
 Each machine would run a lightweight client to aggegate metrics from a single log file, and publish events to the
