@@ -47,7 +47,7 @@ Launch Akita by pointing it at the server access log file that you want to monit
 $ akita /var/log/apache/access.log
 ```
 
-You can also pass in a text stream via a unix pipe:
+You can also provide a stream via a unix pipe:
 
 ```bash
 $ tail -n 1 -f /var/log/apache/access.log | akita -
