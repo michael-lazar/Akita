@@ -57,7 +57,6 @@ If you want to try running Akita but you don't have a webserver to point it to, 
 
 ```bash
 $ gem install apache-loggen
-
 $ apache-loggen --rate=10 | akita -
 ```
 
