@@ -60,3 +60,6 @@ optional arguments:
                         High traffic alert window, in seconds
   -V, --version         show program's version number and exit
 ```
+
+## License
+This project is distributed under the [MIT](LICENSE) license.
