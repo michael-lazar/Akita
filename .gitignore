@@ -3,7 +3,6 @@
 !.gitignore
 *~
 *.pyc
-*.log
 venv
 build
 dist
