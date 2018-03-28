@@ -14,7 +14,13 @@
 <img alt="Demo" src="resources/demo.gif"/>
 </p>
 
-Akita is a local HTTP log monitoring tool that runs in your terminal. With Akita, you can view a summary of you webserver's activity in real-time. All servers that utilize the [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format) are supported, including Apache and Nginx.
+*Akita* is a local HTTP log monitoring tool that runs in your terminal. With Akita, you can view a summary of you webserver's activity in real-time. All servers that utilize the [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format) are supported, including Apache and Nginx.
+
+*Akita* is also a [breed of dog](https://en.wikipedia.org/wiki/Akita_(dog)) originating from the mountainous northern regions of Japan. Akitas are powerful working dogs known for their fierce loyalty to their owners. They're fearless guard dogs who won't back down from a challenge.
+
+<p align="center">
+<img alt="Akita" src="resources/akita_1.jpg" width="667px"/>
+</p>
 
 ## Installation
 
