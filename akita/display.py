@@ -5,7 +5,6 @@ import logging
 from datetime import datetime, timedelta
 from contextlib import contextmanager
 
-
 from .__version__ import __version__
 
 
