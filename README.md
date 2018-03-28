@@ -14,9 +14,9 @@
 <img alt="Demo" src="resources/demo.gif"/>
 </p>
 
-*Akita* is a local HTTP log monitoring tool that runs in your terminal. With Akita, you can view a summary of you webserver's activity in real-time. All servers that utilize the [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format) are supported, including Apache and Nginx.
+*Akita* is a local HTTP log monitoring tool that runs in your terminal. With Akita, you can view a summary of you webserver's activity in real-time. All server access logs that use the [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format) are supported, including Apache and Nginx.
 
-*Akita* is also a [breed of dog](https://en.wikipedia.org/wiki/Akita_(dog)) originating from the mountainous northern regions of Japan. Akitas are powerful working dogs known for their fierce loyalty and affectionism to their owners. They're fearless guard dogs who won't back down from a challenge.
+*Akita* is also a breed of dog originating from the mountainous northern regions of Japan. The Akita is courageous, a natural guardian of his family. Stubborn and willful, he won't back down from a challenge. [<sup>[0]</sup>](http://dogtime.com/dog-breeds/akita)
 
 <p align="center">
 <img alt="Akita" src="resources/akita_1.jpg" width="667px"/>
@@ -47,7 +47,7 @@ Launch Akita by pointing it at the server access log file that you want to monit
 $ akita /var/log/apache/access.log
 ```
 
-You can also pass in a text stream via a unix pipe:
+You can also provide a stream via a unix pipe:
 
 ```bash
 $ tail -n 1 -f /var/log/apache/access.log | akita -
@@ -99,7 +99,7 @@ This repository is continuously tested on [TravisCI](https://travis-ci.org/micha
 ```bash
 $ git clone https://github.com/michael-lazar/Akita.git
 $ cd Akita
-$ pip install .[test]  # Installs pytest if you don't already have it
+$ pip install .[test]  # Installs pytest
 $ env PYTHONPATH=. py.test -v
 ```
 
