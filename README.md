@@ -4,13 +4,17 @@
 <a href="https://pypi.python.org/pypi/akita/">
   <img alt="python" src="https://img.shields.io/badge/python-3.4+-blue.svg"/>
 </a>
-<a href="https://travis-ci.org/michael-lazar/akita">
+<a href="https://travis-ci.org/michael-lazar/Akita">
   <img alt="travis-ci" src="https://travis-ci.org/michael-lazar/Akita.svg?branch=master"/>
 </a>
 
 # Akita
 
-An HTTP log monitoring tool for your terminal
+<p align="center">
+<img alt="Demo" src="resources/demo.gif"/>
+</p>
+
+Akita is a local HTTP log monitoring tool that runs in your terminal. With Akita, you can view a summary of you webserver's activity in real-time. All servers that utilize the [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format) are supported, including Apache and Nginx.
 
 ## Installation
 
