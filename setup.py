@@ -3,15 +3,6 @@ import setuptools
 from version import __version__ as version
 
 
-tests_require = [
-    'pytest>=3.1.0',  # Pinned for the ``pytest.param`` method
-]
-
-extras_require = {
-    'test': tests_require
-}
-
-
 setuptools.setup(
     name='akita',
     version=version,
@@ -22,8 +13,7 @@ setuptools.setup(
     license='MIT',
     keywords='http log apache nginx monitoring terminal console metrics',
     packages=['akita'],
-    test_requires=tests_require,
-    extras_require=extras_require,
+    extras_require = {'test': ['pytest']},  # "pip install akita[test]"
     entry_points={'console_scripts': ['akita=akita.__main__:main']},
     classifiers=[
         'Intended Audience :: End Users/Desktop',
