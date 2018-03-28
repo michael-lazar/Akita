@@ -7,7 +7,7 @@ class HTTPLogParser:
     """
     Extracts information from HTTP log lines
 
-    The line is assumed to be formatted according to the NCSA Combined
+    The log is assumed to be formatted according to the NCSA Combined
     Log format. This is compatible with the default Apache access logs
     and other popular HTTP servers
 
