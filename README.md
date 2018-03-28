@@ -18,20 +18,29 @@ Akita is available on [PyPI](https://pypi.python.org/pypi/akita/) and can be ins
 
 ```bash
 # Requires python 3!
-pip install akita
+$ pip install akita
 ```
 
 Alternatively, you can clone the repository and run the code directly:
 
 ```bash
-git clone https://github.com/michael-lazar/Akita.git
-cd Akita
-python -m akita
+$ git clone https://github.com/michael-lazar/Akita.git
+$ cd Akita
+$ python -m akita
+```
+
+## Usage
+
+If you want to try running Akita but you don't have a webserver to point it to, you can use the [apache-loggen](https://github.com/tamtam180/apache_log_gen) command line tool to generate fake log data.
+
+```bash
+$ gem install apache-loggen
+$ apache-loggen --rate=10 | akita -
 ```
 
 ## Options
 
-```
+```bash
 $ akita --help
 usage: akita [--help] [--version] FILE
 
@@ -59,6 +68,17 @@ optional arguments:
   --alert-window ALERT_WINDOW
                         High traffic alert window, in seconds
   -V, --version         show program's version number and exit
+```
+
+## Testing
+
+This repository is continuously tested on [TravisCI](https://travis-ci.org/michael-lazar/Akita), but you can also run the test suite locally:
+
+```bash
+$ git clone https://github.com/michael-lazar/Akita.git
+$ cd Akita
+$ pip install .[test]  # Installs pytest if you don't already have it
+$ env PYTHONPATH=. py.test -v
 ```
 
 ## License
