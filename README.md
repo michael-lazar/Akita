@@ -28,3 +28,35 @@ git clone https://github.com/michael-lazar/Akita.git
 cd Akita
 python3 -m akita
 ```
+
+## Options
+
+```
+$ akita --help
+usage: akita [--help] [--version] FILE
+
+       / \      _-'
+     _/|  \-''- _ /
+__-' { |         \
+    /             \
+    /      "o.  |o }  Akita - Terminal HTTP Log Monitoring
+    |            \ ;
+                  ',
+       \_         __\
+         ''-_    \.//
+           / '-____'
+          /
+        _'
+      _-'
+
+positional arguments:
+  FILE                  A log file to watch, use "-" to pipe from stdin
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --alert-threshold ALERT_THRESHOLD
+                        High traffic alert threshold, requests/second
+  --alert-window ALERT_WINDOW
+                        High traffic alert window, in seconds
+  -V, --version         show program's version number and exit
+```
