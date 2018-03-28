@@ -10,7 +10,11 @@
 
 # Akita
 
-An HTTP log monitoring tool for your terminal
+<p align="center">
+<img alt="Demo" src="resources/demo.gif"/>
+</p>
+
+Akita is a local HTTP log monitoring tool that runs in your terminal. With Akita, you can view a summary of you webserver's activity in real-time. All servers that utilize the [Common Log Format](https://en.wikipedia.org/wiki/Common_Log_Format) are supported, including Apache and Nginx.
 
 ## Installation
 
