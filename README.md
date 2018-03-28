@@ -41,10 +41,23 @@ $ python -m akita
 
 ## Usage
 
+Launch Akita by pointing it at the server access log file that you want to monitor:
+
+```bash
+$ akita /var/log/apache/access.log
+```
+
+You can also pass in a text stream via a unix pipe:
+
+```bash
+$ tail -n 1 -f /var/log/apache/access.log | akita -
+```
+
 If you want to try running Akita but you don't have a webserver to point it to, you can use the [apache-loggen](https://github.com/tamtam180/apache_log_gen) command line tool to generate fake log data.
 
 ```bash
 $ gem install apache-loggen
+
 $ apache-loggen --rate=10 | akita -
 ```
 
