@@ -99,7 +99,7 @@ This repository is continuously tested on [TravisCI](https://travis-ci.org/micha
 ```bash
 $ git clone https://github.com/michael-lazar/Akita.git
 $ cd Akita
-$ pip install .[test]  # Installs pytest if you don't already have it
+$ pip install .[test]  # Installs pytest
 $ env PYTHONPATH=. py.test -v
 ```
 
