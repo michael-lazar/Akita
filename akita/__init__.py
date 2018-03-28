@@ -5,7 +5,7 @@ LOGO = r"""
      _/|  \-''- _ /
 __-' {{ |         \
     /             \
-    /      "{0}.  |{0} }}  Akita - Terminal HTTP Log Monitoring
+    /      "{0}.  |{0} }}        Akita - Terminal HTTP Log Monitoring
     |            \ ;
                   ',
        \_         __\

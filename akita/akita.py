@@ -14,7 +14,7 @@ from .parser import HTTPLogParser
 from .display import Display
 from .metrics import AlertMetric, TaggedCounterMetric, CounterMetric
 
-if sys.version < (3, 4):
+if sys.version_info < (3, 4):
     sys.exit('Akita requires Python 3.4+')
 
 

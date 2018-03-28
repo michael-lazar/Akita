@@ -3,7 +3,7 @@ import setuptools
 
 from version import __version__ as version
 
-if sys.version < (3, 4):
+if sys.version_info < (3, 4):
     sys.exit('Akita requires Python 3.4+')
 
 setuptools.setup(
