@@ -26,7 +26,7 @@ Alternatively, you can clone the repository and run the code directly:
 ```bash
 git clone https://github.com/michael-lazar/Akita.git
 cd Akita
-python3 -m akita
+python -m akita
 ```
 
 ## Options
