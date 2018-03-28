@@ -39,7 +39,7 @@ usage: akita [--help] [--version] FILE
      _/|  \-''- _ /
 __-' { |         \
     /             \
-    /      "o.  |o }  Akita - Terminal HTTP Log Monitoring
+    /      "o.  |o }        Akita - Terminal HTTP Log Monitoring
     |            \ ;
                   ',
        \_         __\
