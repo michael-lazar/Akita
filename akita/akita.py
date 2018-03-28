@@ -1,4 +1,5 @@
 import os
+import sys
 import time
 import logging
 import argparse
@@ -12,6 +13,9 @@ from .__version__ import __version__
 from .parser import HTTPLogParser
 from .display import Display
 from .metrics import AlertMetric, TaggedCounterMetric, CounterMetric
+
+if sys.version < (3, 4):
+    sys.exit('Akita requires Python 3.4+')
 
 
 _logger = logging.getLogger('akita')
