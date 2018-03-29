@@ -147,17 +147,17 @@ class Akita:
             self.log_file.seek(0, os.SEEK_END)
 
         while True:
-            line = self.log_file.readline()
-            if not line:
-                time.sleep(0.1)  # At the end of the file
-                continue
-
             try:
-                data = self.http_parser.parse(line)
-                self.metrics.add_point(data)
+                line = self.log_file.readline()
+                if line:
+                    data = self.http_parser.parse(line)
+                    self.metrics.add_point(data)
+                else:
+                    # At the end of the file, wait for more data
+                    time.sleep(0.1)
             except Exception as e:
-                # Failed to parse the line
-                # self.logger.warning(e)
+                # The line contained invalid or corrupt data
+                # self.logger.error(e)
                 self.metrics.add_error()
 
 
