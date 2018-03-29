@@ -157,7 +157,7 @@ class Akita:
                 self.metrics.add_point(data)
             except Exception as e:
                 # Failed to parse the line
-                self.logger.warning(e)
+                # self.logger.warning(e)
                 self.metrics.add_error()
 
 
